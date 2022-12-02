@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <main id="app">
+
+      <section class="music-player">
+        <div class="art-box">
+          <img class="art-box-play" src="./images/play-list.svg" alt="">
+          <img class="art-box-img" src="" alt="">
+          <div class="art-box-background">
+            <div class="art-box-time">
+              <p id="time">00:00</p>
+              <p id="duration">00:00</p>
+            </div>
+          </div>
+        </div>
+        <div class="controls-box">
+          <h3 class="controls-box-title"></h3>
+          <h6 class="controls-box-author"></h6>
+          <div class="controls-box-buttons" >
+            <button id="backward" class="controls-box-button"> 
+              <img class="music-player-icon" src="./images/backward.svg" alt=""> 
+            </button>
+            <button id="playPause" class="controls-box-button"> 
+              <img id="iconPlayPause" class="music-player-icon" src="./images/play.svg" alt="">
+            </button>
+            <button id="forward" class="controls-box-button"> 
+              <img class="music-player-icon" src="./images/forward.svg" alt=""> 
+            </button>
+          </div>
+
+
+        </div>
+        <div class="status-box">
+          <p class="status-box-text"> cuando solo hay un candidato, solo hay una eleccion</p>
+          <input type="range" class="status-box-progress" min="0" value="0">
+
+        </div>
+        <div class="playlist">
+            <ol class="playlist-songs">
+            </ol>
+        </div>
+        
+      </section>
+
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
